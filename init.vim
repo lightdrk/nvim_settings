@@ -3,7 +3,6 @@
 setlocal shiftwidth=4
 setlocal tabstop =4
 set splitbelow splitright
-colorscheme evening
 set clipboard^=unnamed
 set clipboard^=unnamedplus
 " bind key shortcut

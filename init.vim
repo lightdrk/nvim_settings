@@ -9,6 +9,8 @@ set clipboard^=unnamedplus
 syntax on
 call plug#begin()
 
+let g:airline_powerline_fonts = 1
+
 Plug 'https://github.com/vim-airline/vim-airline.git'
 Plug 'https://github.com/ap/vim-css-color.git'
 Plug 'https://github.com/ryanoasis/vim-devicons' " Developer Icons
@@ -17,6 +19,7 @@ Plug 'https://github.com/neoclide/coc.nvim'  " Auto Completion
 Plug 'https://github.com/sheerun/vim-polyglot.git' "syntax highlighting
 Plug 'https://github.com/dense-analysis/ale.git' "lint syntax error
 Plug 'https://github.com/airblade/vim-gitgutter.git' " show whats new added like in vs code
+Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}  " We recommend updating the parsers on update
 
 
 
@@ -33,8 +36,6 @@ highlight GitGutterDelete guifg=#ff2222 ctermfg=Red
 
 "enable always
 let g:gitgutter_enabled = 1
-
-
 
 
 
